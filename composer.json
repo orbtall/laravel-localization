@@ -1,0 +1,47 @@
+{
+    "name": "orbtall/laravel-localization",
+    "description": "Easy localization for Laravel",
+    "keywords": ["orbtall", "localization", "laravel", "php"],
+    "homepage": "https://github.com/orbtall/laravel-localization",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Orbtall",
+            "email": "developer@orbtall.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "~5.2.0||~5.3.0||~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench-browser-kit": "~3.4|~3.8|~4.0",
+        "phpunit/phpunit": "6.0.*|^8.0"
+    },
+    "suggest": {
+        "ext-intl": "*"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-0": {
+            "Orbtall\\LaravelLocalization": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Orbtall\\LaravelLocalization\\LaravelLocalizationServiceProvider"
+            ],
+            "aliases": {
+                "LaravelLocalization": "Orbtall\\LaravelLocalization\\Facades\\LaravelLocalization"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
